@@ -146,7 +146,14 @@
     flex-direction: column;
     gap: 30px;
     font-size: 14px;
-  }
+    
+    position: fixed; /* <-- Esto la fija */
+    top: 0; /* Desde el borde superior */
+    left: 0;
+    height: 100vh; /* Altura de toda la pantalla */
+    overflow-y: auto; /* Por si la sidebar es más larga que la pantalla */
+    z-index: 1000; /* Para que esté encima de otros elementos */
+}
   
   .sidebar-logo {
     font-size: 22px;
